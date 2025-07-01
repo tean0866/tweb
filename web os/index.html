@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini SO HTML</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Pantalla de inicio de sesión -->
+  <div id="loginScreen">
+    <h2>Mini SO</h2>
+    <div>
+    </div>
+    <div id="loginForm">
+      <input type="text" id="username" placeholder="Nombre de usuario"><br>
+      <input type="password" id="password" placeholder="Contraseña (opcional)"><br>
+      <button onclick="login()">Entrar</button>
+    </div>
+    <div id="loginMessage"></div>
+  </div>
+
+  <!-- Escritorio -->
+  <div id="desktop" style="display:none;">
+    <div class="desktop-icon" style="left: 200px;" onclick="createAppWindow()">
+      <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Calculadora">
+      <span>Calculadora</span>
+    </div>
+    <div class="desktop-icon" onclick="openFileExplorer()">
+      <img src="https://cdn-icons-png.flaticon.com/512/715/715676.png" alt="Archivos">
+      <span>Archivos</span>
+    </div>
+    <div class="desktop-icon" style="left: 100px;" onclick="openTextEditorApp()">
+      <img src="https://cdn-icons-png.flaticon.com/512/1685/1685233.png" alt="Bloc de Notas">
+      <span>Bloc de Notas</span>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+   <script src="js/base.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/filesystem.js"></script>
+  <script src="js/explorer.js"></script>
+  <script src="js/notepad.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
